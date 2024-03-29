@@ -14,15 +14,15 @@ class Eleicao:
         else:
             print("Candidato nao encontrado.")
 
-    def consultar_votos(self):
+    def ConsultaV(self):
         for candidato, voto in self.votos.items():
             print(f"{candidato}: {voto} votos")
 
-    def candidato_ganhando(self):
+    def CandidatoGanhando(self):
         ganhador = max(self.votos, key=self.votos.get)
         print(f"Candidato a frente: {ganhador} com {self.votos[ganhador]} votos")
 
-    def resultado_final(self):
+    def Resultado(self):
         total_votos = sum(self.votos.values())
         print("Resultado Final da Eleicao:")
         for candidato, voto in sorted(self.votos.items(), key=lambda item: item[1], reverse=True):
@@ -44,12 +44,17 @@ def main():
         if opcao == "1":
             eleicao.votar()
         elif opcao == "2":
-            eleicao.consultar_votos()
+            eleicao.ConsultaV()
         elif opcao == "3":
-            eleicao.candidato_ganhando()
+            eleicao.CandidatoGanhando()
         elif opcao == "4":
-            eleicao.resultado_final()
+            eleicao.Resultado()
             break
+        else:
+            print("Opcao invalida.")
+
+if __name__ == "__main__":
+    main() 
         else:
             print("Opcao invalida.")
 
