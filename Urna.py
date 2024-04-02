@@ -10,7 +10,7 @@ class Eleicao:
         nome_candidato = input("Em quem voce deseja votar? ")
         if nome_candidato in self.candidatos:
             self.votos[nome_candidato] += 1
-            print(f"Voto registrado para {nome_candidato}.")
+            print(f"Voto registrado para o(a) {nome_candidato}.")
         else:
             print("Candidato nao encontrado.")
 
