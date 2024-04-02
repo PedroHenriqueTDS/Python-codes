@@ -58,7 +58,7 @@ while True:
     opcao = input("Digite a opção desejada: ")
 
     if opcao == "1":
-        nome = input("Digite o nome do contato: ")
+        nome = input("Digite  o nome do contato: ")
         telefone = input("Digite o telefone do contato: ")
         adicionar(nome, telefone)
 
