@@ -1,4 +1,5 @@
 def CarregarAgenda():
+  
     try:
         with open("agenda.txt", "r") as arquivo:
             for linha in arquivo:
