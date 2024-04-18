@@ -1,5 +1,6 @@
 import random
 
+
 def adivinha():
     nSecreto = random.randint(1, 100)
     tentativas = 0
