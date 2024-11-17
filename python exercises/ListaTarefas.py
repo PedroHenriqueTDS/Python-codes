@@ -39,7 +39,7 @@ class GerenciadorTarefas:
             with open(nome_arquivo, "r") as arquivo:
                 for linha in arquivo:
                     tarefa, concluida = linha.strip().split(",")
-                    self.lista_tarefas.append({"tarefa": tarefa, "concluida": concluida == "True"})
+                    self.lista_tarefas.append({"tarefa": tarefa, "concluida✅": concluida == "True"})
             print("Tarefas carregadas com sucesso!")
         except FileNotFoundError:
             print("Arquivo de tarefas não encontrado.")
