@@ -1,7 +1,7 @@
 import random
 
 def jogar():
-    jogadas = ["ppedra", "papel", "tesoura", "lagarto", "spock"]
+    jogadas = ["pedra", "papel", "tesoura", "lagarto", "spock"]
 
     print("Bem-vindo ao jogo Pedra, Papel, Tesoura, Lagarto, Spock!!!")
     print("As regras são as seguintes:")
